@@ -129,7 +129,7 @@ ul.list-custom li::before {
     color: #096DD9; 
 } 
 .contact{
-    display: none;
+    position: fixed;
     align-items: center;
     bottom: 0;
     right: 0;
