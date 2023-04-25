@@ -60,7 +60,7 @@ footer{ background: linear-gradient(90deg, #1577D2 0%, #11B5E9 100%), #387DB9; }
     margin: 0;
     font-size: 16px;
     min-height: 70px;
-}
+} 
 .d-row{
     margin: 0 -8px;
 }
@@ -79,10 +79,7 @@ footer{ background: linear-gradient(90deg, #1577D2 0%, #11B5E9 100%), #387DB9; }
     padding: 16px;
 }
 #item-data .owl-dots{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50px; 
 }
 #item-data .owl-dot{
     width: 12px;
@@ -130,7 +127,46 @@ ul.list-custom li::before {
     font-size: 48px;
     line-height: 56px; 
     color: #096DD9; 
+} 
+.contact{
+    display: none;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 50px;  
+    z-index: 1000;
 }
+.contact > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+.contact > a.call{
+    background-color: #007213;
+}
+.contact a i{
+    margin-right: 10px;
+}
+.contact > a.zalo{
+    background-color: #08a7c0;
+}
+.contact .ontop{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 70px;
+}
+.contact .ontop a{
+    font-size: 12px; 
+    margin: 12px;
+    display: block;
+}
+
 @media (max-width: 1200px){
     .scroll-x{ overflow-x: scroll; }
     .border-wrapper{width: max-content;}
@@ -142,8 +178,16 @@ ul.list-custom li::before {
     section{
         background-size: cover !important;
     }
+    #item-data .owl-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 } 
 @media (max-width: 450px){
+    .contact{
+        display: flex;
+    }
     .p-5{
         padding: 30px 16px !important;
     }
@@ -155,6 +199,17 @@ ul.list-custom li::before {
         line-height: 40px;  
     }
 } 
-
+.animation{
+    animation: icon-luc-lac .5s alternate infinite;
+}
+@keyframes icon-luc-lac {
+    0% {transform:rotate(0) scale(1) skew(1deg) }
+    10% {transform:rotate(-4deg) scale(1) skew(1deg) }
+    20% {transform:rotate(4deg) scale(1) skew(1deg) }
+    30% {transform:rotate(-4deg) scale(1) skew(1deg) }
+    40% {transform:rotate(4deg) scale(1) skew(1deg) }
+    50% {transform:rotate(0) scale(1) skew(1deg) }
+    100% {transform:rotate(0) scale(1) skew(1deg) }
+} 
 
     
