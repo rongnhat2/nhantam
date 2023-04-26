@@ -78,19 +78,21 @@ footer{ background: linear-gradient(90deg, #1577D2 0%, #11B5E9 100%), #387DB9; }
     color: #fff;
     padding: 16px;
 }
-#item-data .owl-dots{
-    height: 50px; 
-}
-#item-data .owl-dot{
+#implant .carousel-indicators{
+    bottom: -45px;
+} 
+#implant .carousel-indicators button{
     width: 12px;
+    padding: 0;
+    border: none;
     height: 12px; 
     border-radius: 50px; 
     background: #fff;
     cursor: pointer;
     margin: 0 5px;
 }
-#item-data .owl-dot:hover,
-#item-data .owl-dot.active{
+#implant .carousel-indicators button:hover,
+#implant .carousel-indicators button.active{
     background: #0B70E1;
 } 
 ul.list-custom{
@@ -130,6 +132,7 @@ ul.list-custom li::before {
 } 
 .contact{
     position: fixed;
+    display: none;
     align-items: center;
     bottom: 0;
     right: 0;
@@ -141,20 +144,33 @@ ul.list-custom li::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     height: 100%;
     color: #fff;
     text-decoration: none;
 }
 .contact > a.call{
-    background-color: #007213;
+    background-color: #CF1322;
+    width: 45%;
+}
+.contact > a.call img{
+    width: 16px;
+    margin-right: 10px;
+}
+.contact > a.callback{
+    background-color: #FA8C16;
+    width: 25%;
 }
 .contact a i{
     margin-right: 10px;
 }
 .contact > a.zalo{
-    background-color: #08a7c0;
+    background-color: #389E0D;
+    width: 30%;
 }
+.contact .sms{
+    color: #FF815A;
+}
+
 .contact .ontop{
     position: absolute;
     bottom: 100%;
@@ -166,6 +182,11 @@ ul.list-custom li::before {
     margin: 12px;
     display: block;
 }
+.card-body img{
+    width: 100%;
+    max-width: 120px; 
+}
+.sp{ display: none; }
 
 @media (max-width: 1200px){
     .scroll-x{ overflow-x: scroll; }
@@ -183,6 +204,8 @@ ul.list-custom li::before {
         align-items: center;
         justify-content: center;
     }
+    .lp{ display: none; }
+    .sp{ display: block; }
 } 
 @media (max-width: 450px){
     .contact{
