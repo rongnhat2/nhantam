@@ -13,6 +13,7 @@ html {
 *{
     transition: all 200ms ease; 
     font-weight: 500;
+    scroll-padding-top: 120px;
 } 
 img{ width: 100%; }
 .relative{ position: relative; }
@@ -95,6 +96,7 @@ footer{ background: linear-gradient(90deg, #1577D2 0%, #11B5E9 100%), #387DB9; }
 #implant .carousel-indicators button.active{
     background: #0B70E1;
 } 
+
 ul.list-custom{
     list-style-type: none;
 } 
@@ -118,7 +120,14 @@ ul.list-custom li::before {
 }
 .slogan-footer{ font-family: 'UTM'; font-style: italic; color: #fff; }
 .slogan-footer span{ color: #FF4D4F; }
+.social-list{
+    margin: 10px 0;
+}
 .social-list a{
+    color: #fff;
+    width: 24px;
+    display: flex;
+    align-items: center;
     color: #fff;
     font-size: 24px;
     margin-right: 16px;
